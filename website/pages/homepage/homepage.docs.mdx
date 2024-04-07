@@ -1,0 +1,29 @@
+---
+description: A component that creates a Page for the site landings
+labels: ["page", "landing page"]
+---
+
+import { MemoryRouter } from "react-router-dom";
+import { Homepage } from "./homepage";
+
+A component that renders a Landing page component
+Wrap with `ThemeProvider` to enforce MUI Styling.
+
+### Component usage
+
+Use with a `ThemeProvider` to render with theme
+Use with a React Router to enable routing.
+
+```js
+<MemoryRouter>
+  <Homepage />
+</MemoryRouter>
+```
+
+### Render dark landing page
+
+```js live
+<MemoryRouter>
+  <Homepage />
+</MemoryRouter>
+```

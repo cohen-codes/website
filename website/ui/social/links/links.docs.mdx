@@ -1,0 +1,32 @@
+---
+description: A Social Links component.
+labels: ["social", "links", "links", "user-card"]
+---
+
+import { Links } from "./links.js";
+import { Github } from "./github.js";
+import { LinkedIn } from "./linkedin.js";
+import { Twitter } from "./twitter.js";
+import { Globe } from "./globe.js";
+
+This component is used to display a list of social links on the user card component.
+
+It can render four different types of links:
+
+- Github - <Github />
+- Linkedin - <LinkedIn />
+- Twitter - <Twitter />
+- Personal website - <Globe />
+
+All you need to do is pass the type of link you want to render and the url:
+
+```jsx live
+<Links
+  links={[
+    { url: "www", name: "github" },
+    { url: "www", name: "linkedin" },
+    { url: "www", name: "website" },
+    { url: "www", name: "twitter" },
+  ]}
+/>
+```
