@@ -61,5 +61,4 @@ export const HISTORY: History[] = [
   }),
 ];
 
-export const CONTACT_ME_API_URL =
-  'https://contact-me.nitsancohen770.workers.dev/';
+export const CONTACT_ME_API_URL = 'https://cohen.codes/contact-me';

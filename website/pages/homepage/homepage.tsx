@@ -80,9 +80,9 @@ export function Homepage({ personalImage, socialMediaLinks }: HomepageProps) {
                 lineHeight: '32px',
               }}
             >
-              Join me in transforming software engineering with Component-Based
-              solutions. Together, we can create beautiful and sustainable
-              systems that break down chaos and bring order to complexity.
+              Join me in transforming software engineering with Microfrontends.
+              Together, we can create beautiful and sustainable systems that
+              break down the Monolithic chaos and bring order to complexity.
             </Typography>
             <Margin mt={MarginType.MEDIUM}>
               <Typography
@@ -99,11 +99,11 @@ export function Homepage({ personalImage, socialMediaLinks }: HomepageProps) {
                 be a chaotic and overwhelming place. Monolithic architecture can
                 make everything slower, more difficult to manage, and more prone
                 to errors. But it doesn&#39;t have to be this way. By embracing
-                Component-Based Engineering, we can break down complex systems
-                into smaller, more manageable parts that are easier to develop,
-                test, and deploy. This approach is essential for anyone who
-                wants to stay ahead of the curve and build solutions that are
-                agile, scalable, and future-proof.
+                Component-Based Software Engineering paradigm, we can break down
+                complex systems into smaller, more manageable parts that are
+                easier to develop, test, and deploy. This approach is essential
+                for anyone who wants to stay ahead of the curve and build
+                solutions that are agile, scalable, and future-proof.
               </Typography>
             </Margin>
             <Margin mt={MarginType.MEDIUM}>
