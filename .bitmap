@@ -54,7 +54,7 @@
     "pages/about-page": {
         "name": "pages/about-page",
         "scope": "cohen-codes.website",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "website/pages/about-page"
     },
@@ -68,7 +68,7 @@
     "pages/homepage": {
         "name": "pages/homepage",
         "scope": "cohen-codes.website",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "website/pages/homepage"
     },
@@ -131,7 +131,7 @@
     "website": {
         "name": "website",
         "scope": "cohen-codes.website",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "website/website"
     },
