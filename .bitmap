@@ -54,21 +54,21 @@
     "pages/about-page": {
         "name": "pages/about-page",
         "scope": "cohen-codes.website",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "website/pages/about-page"
     },
     "pages/contact-page": {
         "name": "pages/contact-page",
         "scope": "cohen-codes.website",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "website/pages/contact-page"
     },
     "pages/homepage": {
         "name": "pages/homepage",
         "scope": "cohen-codes.website",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "website/pages/homepage"
     },
@@ -78,6 +78,13 @@
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "website/pages/videos-page"
+    },
+    "seo/page-meta": {
+        "name": "seo/page-meta",
+        "scope": "cohen-codes.website",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "website/seo/page-meta"
     },
     "theme/dark-portfolio-theme": {
         "name": "theme/dark-portfolio-theme",
@@ -131,7 +138,7 @@
     "website": {
         "name": "website",
         "scope": "cohen-codes.website",
-        "version": "0.0.3",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "website/website"
     },

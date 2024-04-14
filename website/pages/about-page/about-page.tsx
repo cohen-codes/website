@@ -4,6 +4,7 @@ import { Heading } from '@cohen-codes/design.typography.heading';
 import { Typography } from '@cohen-codes/design.typography.typography';
 import { Picture } from '@cohen-codes/website.ui.person.picture';
 import { History, HistoryProps } from '@cohen-codes/website.ui.about.history';
+import { PageMeta } from '@cohen-codes/website.seo.page-meta';
 import { Grid, GridProps } from '@mui/material';
 
 export type AboutPageProps = {
@@ -14,6 +15,10 @@ export type AboutPageProps = {
 export function AboutPage({ personalImage, history, ...rest }: AboutPageProps) {
   return (
     <>
+      <PageMeta
+        title="Nitsan Cohen Codes."
+        description="A brief history of Nitsan Cohen Codes. Join me in transforming software engineering with Microfrontends. Together, we can create beautiful and sustainable systems that break down the Monolithic chaos and bring order to complexity."
+      />
       <Grid container spacing={5} {...rest}>
         <Grid item xs={12} md={6}>
           <Breadcrumb

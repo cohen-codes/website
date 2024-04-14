@@ -57,6 +57,7 @@
       "dependencies": {
         "@bitdev/react.app-types.react-rspack": "^0.0.6",
         "@bitdev/react.app-types.vite-react": "^1.1.26",
+        "@cohen-codes/contact-me.ui.contact-form": "^0.0.3",
         "@cohen-codes/design.brand.logo": "^0.0.4",
         "@cohen-codes/design.inputs.button": "^0.0.4",
         "@cohen-codes/design.inputs.icon-text-button": "^0.0.5",
@@ -141,6 +142,7 @@
         "@teambit/blog.entities.blog-post-list": "^0.0.25",
         "@teambit/cloud-providers.deployers.netlify": "^0.1.26",
         "@teambit/cloud.cloud-provider": "^0.0.43",
+        "@teambit/community.envs.community-react": "^2.1.8",
         "@teambit/community.ui.bit-cli.commands-provider": "^0.0.51",
         "@teambit/harmony.content.cli-reference": "^2.0.206",
         "@teambit/people.ui.social-links": "^0.0.6",
@@ -152,6 +154,7 @@
         "classnames": "^2.3.1",
         "html-to-docx": "^1.8.0",
         "react-cv": "^1.6.0",
+        "react-helmet": "^6.1.0",
         "react-transition-group": "^4.4.5",
         "rollup-plugin-polyfill-node": "^0.13.0",
         "sass": "^1.74.1",

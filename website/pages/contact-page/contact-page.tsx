@@ -10,7 +10,8 @@ import { Box, Grid, GridProps } from '@mui/material';
 import {
   ContactForm,
   ContactFormType,
-} from '@nitsan770/contact-me.ui.contact-form';
+} from '@cohen-codes/contact-me.ui.contact-form';
+import { PageMeta } from '@cohen-codes/website.seo.page-meta';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 import './contact-page.css';
 
@@ -42,74 +43,80 @@ export function ContactPage({
   };
 
   return (
-    <Grid container spacing={5} {...rest}>
-      <Grid item xs={12} md={6} sm={12}>
-        <Breadcrumb crumbs={[{ crumb: 'Contact.' }]} />
-        <Margin mt={MarginType.MEDIUM}>
-          <Typography variant="body2" fontSize={18}>
-            Get in touch or shoot me an email directly on{' '}
-            <b>nitsan@cohen.codes</b>
-          </Typography>
-        </Margin>
-        <Margin mt={MarginType.MEDIUM}>
-          <ContactForm onSubmit={handleFormSubmit} />
-        </Margin>
-        <Margin mt={MarginType.LARGE}>
-          <Box>
-            <LinkText
-              linkText="Go to my homepage"
-              url="/"
-              fontSize={16}
-              fontWeight={400}
-              iconSize="medium"
-              color="secondary"
-            />
-          </Box>
-        </Margin>
-        <Margin mt={MarginType.MEDIUM}>
-          <Icons links={socialMediaLinks} />
-        </Margin>
+    <>
+      <PageMeta
+        title="Nitsan Cohen Codes."
+        description="Contact me directly on this form or shoot me an email at nitsan@cohen.codes. I'm always happy to chat about web development, microfrontends, and more."
+      />
+      <Grid container spacing={5} {...rest}>
+        <Grid item xs={12} md={6} sm={12}>
+          <Breadcrumb crumbs={[{ crumb: 'Contact.' }]} />
+          <Margin mt={MarginType.MEDIUM}>
+            <Typography variant="body2" fontSize={18}>
+              Get in touch or shoot me an email directly on{' '}
+              <b>nitsan@cohen.codes</b>
+            </Typography>
+          </Margin>
+          <Margin mt={MarginType.MEDIUM}>
+            <ContactForm onSubmit={handleFormSubmit} />
+          </Margin>
+          <Margin mt={MarginType.LARGE}>
+            <Box>
+              <LinkText
+                linkText="Go to my homepage"
+                url="/"
+                fontSize={16}
+                fontWeight={400}
+                iconSize="medium"
+                color="secondary"
+              />
+            </Box>
+          </Margin>
+          <Margin mt={MarginType.MEDIUM}>
+            <Icons links={socialMediaLinks} />
+          </Margin>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={6}
+          sx={{
+            display: {
+              xs: 'none',
+              sm: 'none',
+              md: 'flex',
+            },
+          }}
+        >
+          <SwitchTransition mode="out-in">
+            <CSSTransition
+              key={formSubmitted ? 'picture' : 'artwork'}
+              classNames="fade"
+              timeout={500}
+            >
+              {formSubmitted ? (
+                <Picture pictureUrl={personalImage} />
+              ) : (
+                <Box
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    flexDirection: 'column',
+                    height: '75%',
+                    width: '75%',
+                    ml: 15,
+                    mt: 2,
+                  }}
+                >
+                  <Artwork />
+                </Box>
+              )}
+            </CSSTransition>
+          </SwitchTransition>
+        </Grid>
       </Grid>
-      <Grid
-        item
-        xs={12}
-        sm={12}
-        md={6}
-        sx={{
-          display: {
-            xs: 'none',
-            sm: 'none',
-            md: 'flex',
-          },
-        }}
-      >
-        <SwitchTransition mode="out-in">
-          <CSSTransition
-            key={formSubmitted ? 'picture' : 'artwork'}
-            classNames="fade"
-            timeout={500}
-          >
-            {formSubmitted ? (
-              <Picture pictureUrl={personalImage} />
-            ) : (
-              <Box
-                sx={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  flexDirection: 'column',
-                  height: '75%',
-                  width: '75%',
-                  ml: 15,
-                  mt: 2,
-                }}
-              >
-                <Artwork />
-              </Box>
-            )}
-          </CSSTransition>
-        </SwitchTransition>
-      </Grid>
-    </Grid>
+    </>
   );
 }

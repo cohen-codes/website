@@ -1,0 +1,56 @@
+---
+description: Renders a <Helmet/> element. Takes HTML <head> elements as children.
+labels: ["page", "head", "meta", "html", "helmet"]
+---
+
+import { PageMeta } from "./page-meta.js";
+
+### About
+
+Component that wraps around the `<head>` of a HTML document, enabling the ability to add meta tags,
+and any other tags that can be placed in the head of a HTML file.
+
+This component provides an easy interface for being able to render HTML head and body elements,
+which means that you can add meta content based on your requirements.
+
+### Component usage
+
+Use the `<PageMeta/>` component in conjunction with the
+[Page](https://bit.dev/teambit/blog/layout/page) component to get its full benefit.
+
+```js
+<PageMeta>
+  <meta property="twitter:site" name="twitter:site" content="@bitdev_" />
+</PageMeta>
+```
+
+Use in conjunction with `<Page/>` if you want to be able to render HTML `<head>` children and
+`<body>` children.
+
+_*Note: Elements inside of `<PageMeta>` will not be visible*_
+
+```js
+<Page>
+  <PageMeta>
+    <meta property="twitter:site" name="twitter:site" content="@bitdev_" />
+  </PageMeta>
+  <div>
+    <p>Hey there!</p>
+  </div>
+</Page>
+```
+
+The PageMeta component accepts two optional props: title and description. This provides an interface
+whereby you can either pass as props, or pass them as children. Both of the following examples would
+produce the same output:
+
+```jsx
+<PageMeta title="About" description="This is where you can learn more about our website" />
+```
+
+```jsx
+<PageMeta>
+    <title>About</title>
+    <meta name="description" content="This is where you can learn more about our website">
+</PageMeta>
+```
