@@ -9,10 +9,18 @@
  */
 
 {
+    "contexts/projects": {
+        "name": "contexts/projects",
+        "scope": "",
+        "version": "0.0.1",
+        "defaultScope": "cohen-codes.website",
+        "mainFile": "index.ts",
+        "rootDir": "website/contexts/projects"
+    },
     "contexts/settings-context": {
         "name": "contexts/settings-context",
         "scope": "cohen-codes.website",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "website/contexts/settings-context"
     },
@@ -22,6 +30,14 @@
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "website/entities/history"
+    },
+    "entities/project": {
+        "name": "entities/project",
+        "scope": "",
+        "version": "0.0.1",
+        "defaultScope": "cohen-codes.website",
+        "mainFile": "index.ts",
+        "rootDir": "website/entities/project"
     },
     "hooks/use-local-storage": {
         "name": "hooks/use-local-storage",
@@ -33,7 +49,7 @@
     "layouts/main": {
         "name": "layouts/main",
         "scope": "cohen-codes.website",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "website/layouts/main"
     },
@@ -47,7 +63,7 @@
     "navigation/header": {
         "name": "navigation/header",
         "scope": "cohen-codes.website",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "website/navigation/header"
     },
@@ -61,16 +77,32 @@
     "pages/contact-page": {
         "name": "pages/contact-page",
         "scope": "cohen-codes.website",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "website/pages/contact-page"
     },
     "pages/homepage": {
         "name": "pages/homepage",
         "scope": "cohen-codes.website",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "website/pages/homepage"
+    },
+    "pages/individual-project-page": {
+        "name": "pages/individual-project-page",
+        "scope": "",
+        "version": "0.0.1",
+        "defaultScope": "cohen-codes.website",
+        "mainFile": "index.ts",
+        "rootDir": "website/pages/individual-project-page"
+    },
+    "pages/projects-page": {
+        "name": "pages/projects-page",
+        "scope": "",
+        "version": "0.0.1",
+        "defaultScope": "cohen-codes.website",
+        "mainFile": "index.ts",
+        "rootDir": "website/pages/projects-page"
     },
     "pages/videos-page": {
         "name": "pages/videos-page",
@@ -121,24 +153,32 @@
         "mainFile": "index.ts",
         "rootDir": "website/ui/person/picture"
     },
+    "ui/projects/projects-list": {
+        "name": "ui/projects/projects-list",
+        "scope": "",
+        "version": "0.0.1",
+        "defaultScope": "cohen-codes.website",
+        "mainFile": "index.ts",
+        "rootDir": "website/ui/projects/projects-list"
+    },
     "ui/social/icons": {
         "name": "ui/social/icons",
         "scope": "cohen-codes.website",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "website/ui/social/icons"
     },
     "ui/social/links": {
         "name": "ui/social/links",
         "scope": "cohen-codes.website",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "website/ui/social/links"
     },
     "website": {
         "name": "website",
         "scope": "cohen-codes.website",
-        "version": "0.0.5",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "website/website"
     },

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Header, HeaderProps } from '@cohen-codes/design.navigation.header';
 import { ThemeToggle } from '@cohen-codes/design.theme.theme-toggle';
 import { SettingsConsumer } from '@cohen-codes/website.contexts.settings-context';

@@ -1,4 +1,4 @@
-import React, { ReactNode, useState, useEffect, createContext } from 'react';
+import { ReactNode, useState, useEffect, createContext } from 'react';
 import { useLocalStorage } from '@cohen-codes/website.hooks.use-local-storage';
 import { PortfolioSiteSettings } from './settings.type.js';
 
@@ -27,12 +27,16 @@ const SettingsContext = createContext<SettingsContextType>({
 
 export function SettingsProvider({ children }: SettingsContextProps) {
   const [settings, setSettings] = useState<PortfolioSiteSettings>(initialState);
+  const [initialized, setInitialized] = useState(false);
   const { initializeSettings, saveSettings } = useLocalStorage();
 
   useEffect(() => {
-    const retrievedSettings = initializeSettings();
-    setSettings(retrievedSettings || initialState);
-  }, []);
+    if (!initialized) {
+      const retrievedSettings = initializeSettings();
+      setSettings(retrievedSettings || initialState);
+      setInitialized(true);
+    }
+  }, [initialized, initializeSettings]);
 
   const toggleTheme = () => {
     const newTheme = settings.theme === 'light' ? 'dark' : 'light';

@@ -27,6 +27,7 @@ export function Links({ links, className, ...rest }: LinksProps) {
               <a
                 style={{ textDecoration: 'none', color: 'inherit' }}
                 href={url}
+                key={name}
               >
                 <Twitter />
               </a>
@@ -36,6 +37,7 @@ export function Links({ links, className, ...rest }: LinksProps) {
               <a
                 style={{ textDecoration: 'none', color: 'inherit' }}
                 href={url}
+                key={name}
               >
                 <Github />
               </a>
@@ -45,6 +47,7 @@ export function Links({ links, className, ...rest }: LinksProps) {
               <a
                 style={{ textDecoration: 'none', color: 'inherit' }}
                 href={url}
+                key={name}
               >
                 <LinkedIn />
               </a>
@@ -54,6 +57,7 @@ export function Links({ links, className, ...rest }: LinksProps) {
               <a
                 style={{ textDecoration: 'none', color: 'inherit' }}
                 href={url}
+                key={name}
               >
                 <Globe />
               </a>
